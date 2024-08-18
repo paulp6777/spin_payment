@@ -11,7 +11,7 @@ from hashlib import new as hashnew
 from odoo import _, api, fields, models
 from odoo.exceptions import ValidationError
 
-from odoo.addons.payment_elavon import const
+from odoo.addons.vm_payment_elavon import const
 
 
 class PaymentProvider(models.Model):
