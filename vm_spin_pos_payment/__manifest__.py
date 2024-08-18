@@ -8,7 +8,7 @@
 Long description of module's purpose
     """,
 
-    'author': "Self",
+    'author': "Intruxtpayments",
     'website': "https:/intruxtpayments.com",
 
     # Categories can be used to filter modules in modules listing
@@ -34,7 +34,7 @@ Long description of module's purpose
       #  'demo/demo.xml',
     ],
 
-    
+    'images': ['static/description/img/banner.jpeg'],
     'assets': {
         'point_of_sale._assets_pos': [
             'vm_spin_pos_payment/static/**/*',
