@@ -9,10 +9,10 @@
             <button type="object" name="action_void" position="replace">
                     <button type="object" name="action_void" invisible="state != 'done'" string="Void Transaction" confirm="Are you sure you want to void the authorized transaction? This action can't be undone."/>
                     <!-- <button type="object" name="action_refund" invisible="state != 'done'" string="Refund Transaction"/> -->
-                    <button type='action' name="%(payment_elavon.action_wizard_return_payment)d" invisible="state != 'done'" string="Refund Transaction"/>
+                    <button type='action' name="%(vm_payment_elavon.action_wizard_return_payment)d" invisible="state != 'done'" string="Refund Transaction"/>
                     <button type="object" name="action_delete" invisible="state != 'done'" string="Delete Transaction"/>
-                    <button type='action' name="%(payment_elavon.action_wizard_installment_payment)d" invisible="state != 'done'" string="Intsallment Payment"/>
-                    <button  name="%(payment_elavon.action_elavon_recurring_payment)d" type="action" string="Recurring" invisible="state != 'done'"/>
+                    <button type='action' name="%(vm_payment_elavon.action_wizard_installment_payment)d" invisible="state != 'done'" string="Intsallment Payment"/>
+                    <button  name="%(vm_payment_elavon.action_elavon_recurring_payment)d" type="action" string="Recurring" invisible="state != 'done'"/>
             </button>
 
        

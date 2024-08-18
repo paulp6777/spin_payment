@@ -16,8 +16,8 @@ from odoo import _, api, models, fields
 from odoo.exceptions import UserError, ValidationError
 
 from odoo.addons.payment import utils as payment_utils
-from odoo.addons.payment_elavon import const
-from odoo.addons.payment_elavon.controllers.controllers import ElavonPayController
+from odoo.addons.vm_payment_elavon import const
+from odoo.addons.vm_payment_elavon.controllers.controllers import ElavonPayController
 from dateutil.relativedelta import relativedelta
 
 
