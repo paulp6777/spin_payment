@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="wizard_elavon_recurring_payment" model="ir.ui.view">
+        <field name="name">elavon.recurring.payment.inherit</field>
+        <field name="model">elavon.recurring.payment</field>
+         <field name="arch" type="xml">
+           <form>
+            <group> 
+                <group>
+                    <field name="ssl_next_payment_date"  options="{'format': 'MM/DD/YYYY'}" widget="date" />
+                    <field name="ssl_end_of_month"/>
+                    <field name="transaction_id"/>
+                </group>
+                <group>
+                     <field name="ssl_billing_cycle"/>
+                    <!--  <field name="ssl_amount"/> -->
+                </group>
+            </group>
+
+            <footer>
+                   <button class="btn-primary"
+                            name="action_recurring"
+                            type="object"
+                            string="Send Request"/> 
+                    <button string="Discard" special="cancel"/>
+                </footer>
+           </form>
+        </field>
+    </record>
+
+     <record id="action_elavon_recurring_payment" model="ir.actions.act_window">
+        <field name="name">Recurring Payment</field>
+        <field name="res_model">elavon.recurring.payment</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="wizard_elavon_recurring_payment"/>
+        <field name="target">new</field>
+       <!--  <field name="binding_model_id" ref="model_sale_order"/>
+        <field name="binding_view_types">list</field> -->
+    </record>
+</odoo>

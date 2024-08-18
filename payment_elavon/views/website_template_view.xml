@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- <template id="payment_template_inherit" inherit_id="website_sale.payment">
+        <xpath expr="//div[@id='payment_method']" position="before">
+            <div class="form-group elavon_payment" >
+                
+               <label for="installment_option">You want Recurring payment?:</label>
+                <select id="installment_option" name="installment_option" class="form-control">
+                     <option value=''>Select Installment Payment</option>
+                     <option value="yes">Yes</option>
+                      <option value="no">No</option>
+                </select>
+                 <br></br>
+                <label for="ssl_total_installments">Choose Total Installment:</label>
+                <select id="ssl_total_installments" name="ssl_total_installments" class="form-control">
+                     <option value=''>Choose Total Installment:</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="102">12</option>
+                </select>
+                 <br></br>
+
+                <label for="ssl_billing_cycle">Choose Billing Cycle:</label>
+                <select id="ssl_billing_cycle" name="ssl_billing_cycle" class="form-control">
+                     <option value=''>Select Billing Cycle</option>
+                      <option value="DAILY">DAILY</option>
+                      <option value="BIWEEKLY">BIWEEKLY</option>
+                      <option value="SEMIMONTHLY">SEMIMONTHLY</option>
+                      <option value="MONTHLY">MONTHLY</option>
+                      <option value="BIMONTHLY">BIMONTHLY</option>
+                      <option value="QUARTERLY">QUARTERLY</option>
+                      <option value="SEMESTER">SEMESTER</option>
+                      <option value="SUSPENDED">SUSPENDED</option>
+                </select>
+                <br></br>installment_option
+              
+               <label for="recurring">You want Recurring payment?:</label>
+                <select id="recurring" name="recurring" class="form-control">
+                     <option value=''>Select Recurring Payment</option>
+                     <option value="yes">Yes</option>
+                      <option value="no">No</option>
+                </select>
+               
+                
+            </div>
+
+        </xpath>
+    </template> -->
+
+    <template id="elavon_payment_method_form" inherit_id="payment.method_form">
+             <xpath expr="//div[@name='o_payment_tokenize_container']" position="before">
+                
+                    <div class="form-group elavon_payment" >
+                        <t t-if="provider_sudo.installment_active">
+                            <label for="installment_option">You want payment Installment ?:</label>
+                            <select id="installment_option" name="installment_option" class="form-control">
+                                 <option value=''>Select Installment Payment</option>
+                                 <option value="yes">Yes</option>
+                                  <option value="no">No</option>
+                            </select>
+                             <br></br>
+                         </t>
+                         <t t-if="provider_sudo.recurring_active">
+                       
+                            <label for="recurring">You want Recurring payment?:</label>
+                            <select id="recurring" name="recurring" class="form-control">
+                                 <option value=''>Select Recurring Payment</option>
+                                 <option value="yes">Yes</option>
+                                  <option value="no">No</option>
+                            </select>
+                        </t>
+                        <t t-if="provider_sudo.installment_active">
+                            <label for="ssl_total_installments">Choose Total Installment:</label>
+                            <select id="ssl_total_installments" name="ssl_total_installments" class="form-control">
+                                 <option value=''>Choose Total Installment:</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                  <option value="9">9</option>
+                                  <option value="10">10</option>
+                                  <option value="11">11</option>
+                                  <option value="102">12</option>
+                            </select>
+                             <br></br>
+                        </t>
+
+                        <label for="ssl_billing_cycle">Choose Billing Cycle:</label>
+                        <select id="ssl_billing_cycle" name="ssl_billing_cycle" class="form-control">
+                             <option value=''>Select Billing Cycle</option>
+                              <option value="DAILY">DAILY</option>
+                              <option value="BIWEEKLY">BIWEEKLY</option>
+                              <option value="SEMIMONTHLY">SEMIMONTHLY</option>
+                              <option value="MONTHLY">MONTHLY</option>
+                              <option value="BIMONTHLY">BIMONTHLY</option>
+                              <option value="QUARTERLY">QUARTERLY</option>
+                              <option value="SEMESTER">SEMESTER</option>
+                              <option value="SUSPENDED">SUSPENDED</option>
+                        </select>
+                        <br></br>
+
+                    </div>
+
+            </xpath>
+    </template>
+
+
+</odoo>
+
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="payment_page_elavon" name="Payment Elavon" inherit_id="website_sale.payment">
+     <div id="address_on_payment" class="mb-4" position="after">
+        <div id="address_on_payment" class="mb-4">
+        	<label for="installment">Choose a Installment:</label>
+			<select name="installment" id="installment">
+			  <option value="DAILY">DAILY</option>
+			  <option value="BIWEEKLY">BIWEEKLY</option>
+			  <option value="SEMIMONTHLY">SEMIMONTHLY</option>
+			  <option value="MONTHLY">MONTHLY</option>
+			  <option value="BIMONTHLY">BIMONTHLY</option>
+			  <option value="QUARTERLY">QUARTERLY</option>
+			  <option value="SEMESTER">SEMESTER</option>
+			  <option value="SUSPENDED">SUSPENDED</option>
+			</select>
+            <br></br>
+			<input type="checkbox" id="recurring" name="recurring" value="recurring"/>
+			<label for="recurring"> You want Recurring payment?</label>
+
+        </div>
+     </div>
+
+    </template>
+
+</odoo> -->

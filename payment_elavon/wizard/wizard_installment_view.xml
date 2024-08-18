@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="wizard_installment_payment" model="ir.ui.view">
+        <field name="name">wizard.installment.payment.inherit</field>
+        <field name="model">wizard.installment.payment</field>
+         <field name="arch" type="xml">
+           <form>
+            <group>
+                 <group>                
+               
+                     <field name="amount" required="1"/> 
+                     <field name="ssl_billing_cycle" required="1"/>
+                     <field name="ssl_total_installments" required="1"/>
+
+                </group>
+                 <group>                
+                   
+                         <field name="ssl_next_payment_date" required="1" /> 
+                         <field name="ssl_end_of_month" required="1"/>
+
+                </group>
+
+            </group>
+
+
+            <footer>
+                   <button class="btn-primary"
+                            name="elavon_make_installment"
+                            type="object"
+                            string="Add  Installment"/>
+                    <button string="Discard" special="cancel"/>
+                </footer>
+           </form>
+        </field>
+    </record>
+
+     <record id="action_wizard_installment_payment" model="ir.actions.act_window">
+        <field name="name">Installment Payment</field>
+        <field name="res_model">wizard.installment.payment</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="wizard_installment_payment"/>
+        <field name="target">new</field>
+      
+    </record>
+</odoo>

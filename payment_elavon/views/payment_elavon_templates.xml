@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+     <template id="redirect_form">
+        <form t-att-action="api_url" method="post">
+            <input type="hidden" name="ssl_merchant_id" t-att-value="ssl_merchant_id"/>
+            <input type="hidden" name="ssl_user_id" t-att-value="ssl_user_id"/>
+            <input type="hidden" name="ssl_pin" t-att-value="ssl_pin"/>
+            <input type="hidden" name="ssl_amount" t-att-value="amount"/>
+            <input type="hidden" name="ssl_transaction_type" t-att-value="ccsale"/>
+            <input type="text" name="ssl_callback_url" t-att-value="ssl_callback_url"/>
+            <input type="hidden" name="ssl_first_name" t-att-value="ssl_first_name"/>
+            <input type="hidden" name="ssl_last_name" t-att-value="ssl_last_name"/>
+            <input type="hidden" name="ssl_email" t-att-value="ssl_email"/>
+
+            <input type="hidden" name="ssl_company" t-att-value="ssl_company"/>
+            <input type="hidden" name="ssl_avs_address" t-att-value="ssl_avs_address"/>
+            <input type="hidden" name="ssl_address2" t-att-value="ssl_address2"/>
+            
+            <input type="hidden" name="ssl_ship_to_address1" t-att-value="ssl_ship_to_address1"/>
+            <input type="hidden" name="ssl_city" t-att-value="ssl_city"/>
+            <input type="hidden" name="ssl_state" t-att-value="ssl_state"/>
+            <input type="hidden" name="ssl_phone" t-att-value="ssl_phone"/>
+            <input type="hidden" name="ssl_country" t-att-value="ssl_country"/>
+            
+
+            <input type="hidden" name="ssl_invoice_number" t-att-value="ssl_invoice_number"/>
+            <input type="hidden" name="ssl_add_token" t-att-value="ssl_add_token"/>
+            <input type="hidden" name="ssl_get_token" t-att-value="ssl_get_token"/>
+          
+        </form>
+    </template>
+
+</odoo>

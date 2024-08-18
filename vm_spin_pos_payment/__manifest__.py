@@ -41,4 +41,6 @@ Long description of module's purpose
         ],
     },
      'license': 'LGPL-3',
+    'price': 00.00,
+    'currency': 'Euro'
 }
