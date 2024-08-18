@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="wizard_return_payment" model="ir.ui.view">
+        <field name="name">wizard.return.payment.inherit</field>
+        <field name="model">wizard.return.payment</field>
+         <field name="arch" type="xml">
+           <form>
+            <group>                
+               
+                     <field name="amount"/>            
+            </group>
+
+            <footer>
+                    <button class="btn-primary"
+                            name="action_refund"
+                            type="object"
+                            string="Send Refund"/> 
+                    <button string="Discard" special="cancel"/>
+                </footer>
+           </form>
+        </field>
+    </record>
+
+     <record id="action_wizard_return_payment" model="ir.actions.act_window">
+        <field name="name">Return Payment</field>
+        <field name="res_model">wizard.return.payment</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="wizard_return_payment"/>
+        <field name="target">new</field>
+      
+    </record>
+</odoo>
