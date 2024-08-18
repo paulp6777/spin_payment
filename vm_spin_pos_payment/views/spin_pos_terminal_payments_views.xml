@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="spin_pos_terminal_payments_view_form" model="ir.ui.view">
+        <field name="name">spin.pos.terminal.payments.view.form</field>
+        <field name="model">spin.pos.terminal.payments</field>
+        <field name="arch" type="xml">
+            <form>
+            <header>
+                <button type="object" string="Capture Payment"  name="capture_payment" class="oe_highlight"  invisible="transtype != 'Auth' or status =='capture'"/>
+                <field name="status" widget="statusbar" />
+            </header>
+                <sheet>
+                    <!-- <div class="oe_title" name="event_type_title">
+                        <h1><field name="name" class="mb-2"/></h1>
+                    </div> -->
+                    <group>
+                        <group>
+                            <field name="name" class="mb-2" readonly="1"/>
+                            <field name="spin_terminal_id"  readonly="1"/>
+                            <field name="pos_order_id" readonly="1"/>
+                            <field name="RefId" readonly="1"/>
+                            <field name="is_refund_payment" readonly="1"/>
+                              <field name="transtype"  readonly="1"/>
+                            
+                        </group>
+                        <group>
+                           
+                            <field name="amount" readonly="1"/>
+                            <field name="spin_uid" readonly="1" />
+                            <field name="session_id"  readonly="1"/>
+                            <field name="pos_reference" readonly="1"/>
+                        </group>
+
+                    </group>
+                    <notebook>
+                        <page string="Response">
+                            <field name="spin_latest_response_char" readonly="1"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                 <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="spin_pos_terminal_payments_view_tree" model="ir.ui.view">
+        <field name="name">spin.pos.terminal.payments.view.tree</field>
+        <field name="model">spin.pos.terminal.payments</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="create_date"/>
+                <field name="name" />
+                <field name="spin_uid" />
+                <field name="amount"/>
+                <field name="pos_order_id"/>
+                <field name="spin_terminal_id" />
+                <field name="session_id" />
+                 <field name="is_refund_payment"/>
+                <field name="status" widget="badge" decoration-info="status == 'pending'" decoration-success="status == 'paid'" decoration-danger="status in ['failed', 'expired', 'canceled']" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="spin_pos_terminal_payments_action" model="ir.actions.act_window">
+        <field name="name">Spin Pos Terminals Payments</field>
+        <field name="res_model">spin.pos.terminal.payments</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+      <menuitem
+        id="spin_pos_treminal_payment_menu"
+        name="Spin Pos Terminal Payments"
+        action="spin_pos_terminal_payments_action"
+        parent="point_of_sale.menu_point_config_product"/>
+
+</odoo>
