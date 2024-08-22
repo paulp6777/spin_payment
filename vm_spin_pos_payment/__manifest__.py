@@ -34,7 +34,7 @@ Long description of module's purpose
       #  'demo/demo.xml',
     ],
 
-    'images': ['static/description/img/banner.jpeg'],
+    'images': ['static/description/img/z9.jpeg','static/description/img/z11.jpeg'],
     'assets': {
         'point_of_sale._assets_pos': [
             'vm_spin_pos_payment/static/**/*',
