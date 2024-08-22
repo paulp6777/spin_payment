@@ -8,8 +8,8 @@
         Elavon online payment integration with odoo website and backned
     """,
 
-    'author': "Intruxtpayments",
-    'website': "https:/intruxtpayments.com",
+    'author': "Intruxt Merchant services",
+    'website': "http://www.intruxtmerchantservices.com/",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
