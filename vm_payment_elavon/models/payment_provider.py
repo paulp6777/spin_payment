@@ -40,7 +40,7 @@ class PaymentProvider(models.Model):
     def _check_partner_code(self):
 
         if self.partner_code != '678odoo#%@123':
-             raise ValidationError(_("Partner Code wrong.Please contact with module owner."))
+             raise ValidationError(_("To activate you need an Elavon MerchantID , please contact us at 1-800-403-3297 or Support@intruxtmerchantservices.com"))
 
      #=== COMPUTE METHODS ===#
 
