@@ -29,10 +29,11 @@
          'wizard/wizard_capture_view.xml',
          'wizard/wizard_installment_view.xml',
          'data/payment_provider_data.xml',   
-         'views/payment_transaction_view.xml',
+         
          'wizard/wizard_recurring_payment_view.xml',
          'views/sale_order_view.xml',
-         'views/website_template_view.xml'
+         'views/website_template_view.xml',
+         'views/payment_transaction_view.xml',
          
             
     ],
