@@ -223,7 +223,7 @@ class PaymentTransaction(models.Model):
             # 'secure_hash': self.provider_id._asiapay_calculate_signature(
             #     rendering_values, incoming=False
             # ),
-            'api_url':'https://api.convergepay.com/hosted-payments?ssl_txn_auth_token='+str(x.text) #self.provider_id._elavon_get_api_url()
+            'api_url':const.API_URLS['elavon_token_live']['token_live'] if self.provider_id.state =='enabled'  else const.API_URLS['elavon_token_test']['token_test']+str(x.text)#'https://api.convergepay.com/hosted-payments?ssl_txn_auth_token='+str(x.text) #self.provider_id._elavon_get_api_url()
         })
         return rendering_values
 
