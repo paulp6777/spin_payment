@@ -334,7 +334,7 @@ class PaymentTransaction(models.Model):
         print("_elavon_make_capture")
         self.ensure_one()
 
-        url = const.API_URLS['process']['elavon_process']#"https://api.demo.convergepay.com/VirtualMerchantDemo/processxml.do"
+        url = const.API_URLS['process_live']['live'] if self.provider_id.state =='enabled'  else const.API_URLS['process_test']['test'] #"https://api.demo.convergepay.com/VirtualMerchantDemo/processxml.do"
         payload = '''
                 <txn>
                   <ssl_merchant_id>{}</ssl_merchant_id>
@@ -436,7 +436,7 @@ class PaymentTransaction(models.Model):
         print("_elavon_make_avoid")
 
         self.ensure_one()
-        url = const.API_URLS['process']['elavon_process']#"https://api.demo.convergepay.com/VirtualMerchantDemo/processxml.do"
+        url = const.API_URLS['process_live']['live'] if self.provider_id.state =='enabled'  else const.API_URLS['process_test']['test']#"https://api.demo.convergepay.com/VirtualMerchantDemo/processxml.do"
         payload = '''
                 <txn>
                   <ssl_merchant_id>{}</ssl_merchant_id>
@@ -507,7 +507,7 @@ class PaymentTransaction(models.Model):
     def _elavon_make_refund(self,amount_to_refund):
         print("_elavon_make_refund_elavon_make_refund")
         self.ensure_one()
-        url =const.API_URLS['process']['elavon_process']#"https://api.demo.convergepay.com/VirtualMerchantDemo/processxml.do"
+        url =const.API_URLS['process_live']['live'] if self.provider_id.state =='enabled'  else const.API_URLS['process_test']['test']#"https://api.demo.convergepay.com/VirtualMerchantDemo/processxml.do"
         payload = '''
                 <txn>
                   <ssl_merchant_id>{}</ssl_merchant_id>
@@ -610,7 +610,7 @@ class PaymentTransaction(models.Model):
         print("action_delete")
         self.ensure_one()
 
-        url = const.API_URLS['process']['elavon_process']#"https://api.demo.convergepay.com/VirtualMerchantDemo/processxml.do"
+        url = const.API_URLS['process_live']['live'] if self.provider_id.state =='enabled'  else const.API_URLS['process_test']['test']#"https://api.demo.convergepay.com/VirtualMerchantDemo/processxml.do"
         payload = '''
                 <txn>
                   <ssl_merchant_id>{}</ssl_merchant_id>
@@ -712,7 +712,7 @@ class PaymentTransaction(models.Model):
             },
         )
     def _payment_by_token(self,processing_values):
-        url = const.API_URLS['process']['elavon_process']#"https://api.demo.convergepay.com/VirtualMerchantDemo/processxml.do"
+        url = const.API_URLS['process_live']['live'] if self.provider_id.state =='enabled'  else const.API_URLS['process_test']['test']#"https://api.demo.convergepay.com/VirtualMerchantDemo/processxml.do"
         payload='''
         xmldata=
           "<txn>
@@ -805,7 +805,7 @@ class PaymentTransaction(models.Model):
             self.ensure_one()
 
           
-            url = const.API_URLS['process']['elavon_process']#"https://api.demo.convergepay.com/VirtualMerchantDemo/processxml.do"
+            url = const.API_URLS['process_live']['live'] if self.provider_id.state =='enabled'  else const.API_URLS['process_test']['test']#"https://api.demo.convergepay.com/VirtualMerchantDemo/processxml.do"
             payload = '''
                     <txn>
                       <ssl_merchant_id>{}</ssl_merchant_id>
@@ -844,7 +844,7 @@ class PaymentTransaction(models.Model):
         print("elavon_make_installment transaction")
         self.ensure_one()
         if amount and ssl_billing_cycle and ssl_next_payment_date and ssl_end_of_month and ssl_total_installments:
-            url = const.API_URLS['process']['elavon_process']#"https://api.demo.convergepay.com/VirtualMerchantDemo/processxml.do"
+            url = const.API_URLS['process_live']['live'] if self.provider_id.state =='enabled'  else const.API_URLS['process_test']['test']#"https://api.demo.convergepay.com/VirtualMerchantDemo/processxml.do"
             transaction_id=self.env['payment.transaction'].search([('id','=', self.env.context.get('active_id'))], limit=1)
             payload = '''
                     <txn>
