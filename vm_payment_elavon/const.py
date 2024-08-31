@@ -2,7 +2,7 @@
 
 API_URLS = {
     'production': {
-        'elavon': 'https://api.demo.convergepay.com/hosted-payments/transaction_token',
+        'elavon': 'https://api.convergepay.com/hosted-payments/transaction_token',
        
     },
     'test': {
@@ -10,10 +10,17 @@ API_URLS = {
        
     },
 
-    'process': {
-        'elavon_process': 'https://api.demo.convergepay.com/VirtualMerchantDemo/processxml.do',
+    'process_test': {
+        'test': 'https://api.convergepay.com/VirtualMerchantDemo/processxml.do',
        
-    }
+    },
+
+    'process_live': {
+        'live': 'https://api.convergepay.com/VirtualMerchant/processxml.do'#'https://api.convergepay.com/VirtualMerchantDemo/processxml.do',
+       
+    },
+
+
 
 }
 
