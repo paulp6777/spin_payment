@@ -2,10 +2,10 @@
 {
     'name': "Elavon Payment Gateway Integration",
 
-    'summary': "Elavon online payment integration with odoo website and backned",
+    'summary': "Elavon Payment converge gateway payment integration for Odoo Website , subscriptions , accounting , Invoicing , Ecommerce , Digital Invoice , tokenization and surcharge program option in USA , CANADA , BNPL (Buy Now Pay Later) Avvance integrated to checkout. Shopping Cart , E-com , pos , credit card , Debit ,  PayPal , ApplePay , GooglePay payment processing .",
 
     'description': """
-        Elavon online payment integration with odoo website and backned
+        Elavon Payment converge gateway payment integration for Odoo Website , subscriptions , accounting , Invoicing , Ecommerce , Digital Invoice , tokenization and surcharge program option in USA , CANADA , BNPL (Buy Now Pay Later) Avvance integrated to checkout. Shopping Cart , E-com , pos , credit card , Debit ,  PayPal , ApplePay , GooglePay payment processing .
     """,
 
     'author': "Intruxt Merchant services",

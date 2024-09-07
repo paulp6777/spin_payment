@@ -2,10 +2,10 @@
 {
     'name': "Spin Payment Terminal Integration",
 
-    'summary': "Spin Payment Terminal Integration",
+    'summary': "DejaVoo Pos Spin Payment terminal integration for Odoo with surcharge program and Dual Pricing , Cash Discount options in USA , CANADA .  Nuvei  payment processing for  Z8 , Z9 , Z11 payment integration , Credit Card machine, Debit , PayPal , ApplePay , GooglePay integrated to Point of Sale and invoicing like restaurant and retail applications.",
 
     'description': """
-Long description of module's purpose
+DejaVoo Pos Spin Payment terminal integration for Odoo with surcharge program and Dual Pricing , Cash Discount options in USA , CANADA .  Nuvei  payment processing for  Z8 , Z9 , Z11 payment integration , Credit Card machine, Debit , PayPal , ApplePay , GooglePay integrated to Point of Sale and invoicing like restaurant and retail applications.
     """,
 
     'author': "Intruxt Merchant services",
