@@ -41,6 +41,6 @@ DejaVoo Pos Spin Payment terminal integration for Odoo , multi location manageme
         ],
     },
      'license': 'LGPL-3',
-    'price': 180.00,
+    'price': 199.00,
      'currency': 'USD'
 }
