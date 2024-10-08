@@ -47,7 +47,7 @@
     'post_init_hook': 'post_init_hook',
     'uninstall_hook': 'uninstall_hook',
     'license': 'LGPL-3',
-    'price': 180.00,
+    'price': 199.00,
     'currency': 'USD'
 
 }
