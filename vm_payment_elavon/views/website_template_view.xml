@@ -94,19 +94,41 @@
                              <br></br>
                         </t>
 
-                        <label for="ssl_billing_cycle">Choose Billing Cycle:</label>
-                        <select id="ssl_billing_cycle" name="ssl_billing_cycle" class="form-control">
-                             <option value=''>Select Billing Cycle</option>
-                              <option value="DAILY">DAILY</option>
-                              <option value="BIWEEKLY">BIWEEKLY</option>
-                              <option value="SEMIMONTHLY">SEMIMONTHLY</option>
-                              <option value="MONTHLY">MONTHLY</option>
-                              <option value="BIMONTHLY">BIMONTHLY</option>
-                              <option value="QUARTERLY">QUARTERLY</option>
-                              <option value="SEMESTER">SEMESTER</option>
-                              <option value="SUSPENDED">SUSPENDED</option>
-                        </select>
-                        <br></br>
+                        <t t-if="provider_sudo.recurring_active">
+
+                            <label for="ssl_billing_cycle">Choose Billing Cycle:</label>
+                            <select id="ssl_billing_cycle" name="ssl_billing_cycle" class="form-control">
+                                 <option value=''>Select Billing Cycle</option>
+                                  <option value="DAILY">DAILY</option>
+                                  <option value="BIWEEKLY">BIWEEKLY</option>
+                                  <option value="SEMIMONTHLY">SEMIMONTHLY</option>
+                                  <option value="MONTHLY">MONTHLY</option>
+                                  <option value="BIMONTHLY">BIMONTHLY</option>
+                                  <option value="QUARTERLY">QUARTERLY</option>
+                                  <option value="SEMESTER">SEMESTER</option>
+                                  <option value="SUSPENDED">SUSPENDED</option>
+                            </select>
+                            <br></br>
+
+                         </t>
+
+                        <t t-if="provider_sudo.installment_active">
+
+                            <label for="ssl_billing_cycle">Choose Billing Cycle:</label>
+                            <select id="ssl_billing_cycle" name="ssl_billing_cycle" class="form-control">
+                                 <option value=''>Select Billing Cycle</option>
+                                  <option value="DAILY">DAILY</option>
+                                  <option value="BIWEEKLY">BIWEEKLY</option>
+                                  <option value="SEMIMONTHLY">SEMIMONTHLY</option>
+                                  <option value="MONTHLY">MONTHLY</option>
+                                  <option value="BIMONTHLY">BIMONTHLY</option>
+                                  <option value="QUARTERLY">QUARTERLY</option>
+                                  <option value="SEMESTER">SEMESTER</option>
+                                  <option value="SUSPENDED">SUSPENDED</option>
+                            </select>
+                            <br></br>
+
+                         </t>
 
                     </div>
 

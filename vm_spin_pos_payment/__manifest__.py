@@ -2,10 +2,10 @@
 {
     'name': "Spin Payment Terminal Integration",
 
-    'summary': "DejaVoo Pos Spin Payment terminal integration for Odoo with surcharge program and Dual Pricing , Cash Discount options in USA , CANADA .  Nuvei  payment processing for  Z8 , Z9 , Z11 payment integration , Credit Card machine, Debit , PayPal , ApplePay , GooglePay integrated to Point of Sale and invoicing like restaurant and retail applications.",
+    'summary': "DejaVoo Pos Spin Payment terminal integration for Odoo , multi location management , inventory management , with surcharge program and Dual Pricing , Cash Discount options in USA , CANADA .  Nuvei  payment processing for  Z8 , Z9 , Z11 , pos software , payment gateway integration , Credit Card machine , credit card processing ,  Debit , interac ,  PayPal , Apple Pay , Google Pay integrated to Point of Sale and invoicing like restaurant and retail applications. POS system integration.",
 
     'description': """
-DejaVoo Pos Spin Payment terminal integration for Odoo with surcharge program and Dual Pricing , Cash Discount options in USA , CANADA .  Nuvei  payment processing for  Z8 , Z9 , Z11 payment integration , Credit Card machine, Debit , PayPal , ApplePay , GooglePay integrated to Point of Sale and invoicing like restaurant and retail applications.
+DejaVoo Pos Spin Payment terminal integration for Odoo , multi location management , inventory management , with surcharge program and Dual Pricing , Cash Discount options in USA , CANADA .  Nuvei  payment processing for  Z8 , Z9 , Z11 , pos software , payment gateway integration , Credit Card machine , credit card processing ,  Debit , interac ,  PayPal , Apple Pay , Google Pay integrated to Point of Sale and invoicing like restaurant and retail applications. POS system integration..
     """,
 
     'author': "Intruxt Merchant services",
@@ -41,6 +41,6 @@ DejaVoo Pos Spin Payment terminal integration for Odoo with surcharge program an
         ],
     },
      'license': 'LGPL-3',
-    'price': 00.00,
+    'price': 199,
     'currency': 'Euro'
 }

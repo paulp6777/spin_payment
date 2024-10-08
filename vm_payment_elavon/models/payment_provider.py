@@ -34,7 +34,7 @@ class PaymentProvider(models.Model):
 
     recurring_active=fields.Boolean('Recurring Active')
     installment_active=fields.Boolean('Installment Active')
-    partner_code=fields.Char("Partner Code", required="1")
+    partner_code=fields.Char("Partner Code", required_if_provider='elavon')
 
     @api.constrains('partner_code')
     def _check_partner_code(self):

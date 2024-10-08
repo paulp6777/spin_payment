@@ -2,10 +2,10 @@
 {
     'name': "Elavon Payment Gateway Integration",
 
-    'summary': "Elavon Payment converge gateway payment integration for Odoo Website , subscriptions , accounting , Invoicing , Ecommerce , Digital Invoice , tokenization and surcharge program option in USA , CANADA , BNPL (Buy Now Pay Later) Avvance integrated to checkout. Shopping Cart , E-com , pos , credit card , Debit ,  PayPal , ApplePay , GooglePay payment processing .",
+    'summary': "Elavon Payment converge hosted payment gateway integration for Odoo Website , subscription billing , subscription payments , online Invoicing , Ecommerce , Digital Invoice with payment link , tokenization , mobile payments, recurring payments , buy button , omni commerce payment solution ,  surcharge program option in USA , CANADA , BNPL (Buy Now Pay Later) Avvance integrated to online checkout. Shopping Cart , E-com , e commerce , pos , point of sale system , credit card processing , Debit ,  PayPal , Apple Pay , Google Pay, online payments processing , Payment plugins , payment api , cross-border payments .",
 
     'description': """
-        Elavon Payment converge gateway payment integration for Odoo Website , subscriptions , accounting , Invoicing , Ecommerce , Digital Invoice , tokenization and surcharge program option in USA , CANADA , BNPL (Buy Now Pay Later) Avvance integrated to checkout. Shopping Cart , E-com , pos , credit card , Debit ,  PayPal , ApplePay , GooglePay payment processing .
+        Elavon Payment converge hosted payment gateway integration for Odoo Website , subscription billing , subscription payments , online Invoicing , Ecommerce , Digital Invoice with payment link , tokenization , mobile payments, recurring payments , buy button , omni commerce payment solution ,  surcharge program option in USA , CANADA , BNPL (Buy Now Pay Later) Avvance integrated to online checkout. Shopping Cart , E-com , e commerce , pos , point of sale system , credit card processing , Debit ,  PayPal , Apple Pay , Google Pay, online payments processing , Payment plugins , payment api , cross-border payments . .
     """,
 
     'author': "Intruxt Merchant services",
@@ -47,7 +47,7 @@
     'post_init_hook': 'post_init_hook',
     'uninstall_hook': 'uninstall_hook',
     'license': 'LGPL-3',
-    'price': 00.00,
+    'price': 199,
     'currency': 'EUR'
 
 }
