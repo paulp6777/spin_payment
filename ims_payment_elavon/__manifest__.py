@@ -40,7 +40,7 @@
     'images': ['static/description/img/banner.jpeg'],
     'assets': {
         'web.assets_frontend': [
-         'payment_elavon/static/src/js/elavon_payment.js',
+         'ims_payment_elavon/static/src/js/elavon_payment.js',
     ]
     },
     #'pre_init_hook': 'pre_init_hook',
