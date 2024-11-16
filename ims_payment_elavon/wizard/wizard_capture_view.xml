@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="wizard_capture_payment" model="ir.ui.view">
+        <field name="name">wizard.capture.payment.inherit</field>
+        <field name="model">wizard.capture.payment</field>
+         <field name="arch" type="xml">
+           <form>
+            <group>                
+               
+                     <field name="amount"/>            
+            </group>
+
+            <footer>
+                   <button class="btn-primary"
+                            name="action_capture"
+                            type="object"
+                            string="Capture Transaction"/> 
+                    <button string="Discard" special="cancel"/>
+                </footer>
+           </form>
+        </field>
+    </record>
+
+     <record id="action_wizard_capture_payment" model="ir.actions.act_window">
+        <field name="name">Capture Payment</field>
+        <field name="res_model">wizard.capture.payment</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="wizard_capture_payment"/>
+        <field name="target">new</field>
+      
+    </record>
+</odoo>

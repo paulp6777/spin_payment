@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<odoo>
+
+    <record id="payment_provider_form" model="ir.ui.view">
+        <field name="name">Ealvon Provider Form</field>
+        <field name="model">payment.provider</field>
+        <field name="inherit_id" ref="payment.payment_provider_form"/>
+        <field name="arch" type="xml">
+            <group name="provider_credentials" position='inside'>
+                <group invisible="code != 'elavon'">
+                    <field name="ssl_merchant_id"
+                           string="Merchant ID"
+                           required="code == 'elavon' and state != 'disabled'"/>
+                    <field name="ssl_user_id"
+                           string="Merchant  USER ID"
+                           required="code == 'elavon' and state != 'disabled'"/>
+                    <field name="ssl_pin"
+                           string="Merchant Pin"
+                           required="code == 'elavon' and state != 'disabled'"
+                           password="True"/>
+
+                    <field name="ssl_transaction_type"
+                           string="Elavon Trasnaction Type"
+                           required="code == 'elavon' and state != 'disabled'"
+                           password="True"/>
+
+                    <field name="recurring_active"   string="Recurring Payment" />
+
+                    <field name="installment_active" />
+
+                    <field name="partner_code"/>
+
+
+
+                  
+                </group>
+            </group>
+        </field>
+    </record>
+
+    
+
+</odoo>

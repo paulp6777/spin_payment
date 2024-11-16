@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="payment_provider_elavon" model="payment.provider">
+        <field name="name">Elavon Payment</field>
+       <!--  <field name="image_128" type="base64" file="payment_tabby/static/description/icon.jpg"/> -->
+        <field name="module_id" ref="base.module_ims_payment_elavon"/>
+        <field name="payment_method_ids"
+               eval="[(6, 0, [
+                   ref('payment.payment_method_card')
+               ])]"/>
+        <field name="code">elavon</field>
+        <field name="redirect_form_view_id" ref="redirect_form"/>
+        <field name="allow_tokenization">True</field>
+        <field name="ssl_merchant_id">0022742</field>
+        <field name="ssl_user_id">apiuser</field>
+        <field name="ssl_pin">YA8P237WMBGE2VUNWOJXLCXKB7EL809M4W6PGUVR8O753C5GZNCBU6SAHNAB4HIR</field>
+    </record>
+    
+     <record id="account_payment_method_elavon_in" model="account.payment.method">
+        <field name="name">Elavon Payment</field>
+        <field name="code">elavon</field>
+        <field name="payment_type">inbound</field>
+
+    </record>
+    
+</odoo>
