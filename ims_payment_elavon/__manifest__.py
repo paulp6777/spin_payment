@@ -43,7 +43,10 @@
          'ims_payment_elavon/static/src/js/elavon_payment.js',
     ]
     },
-    #'pre_init_hook': 'pre_init_hook',
+    'external_dependencies': {
+         'python': ['xmltodict'],
+    },
+    
     'post_init_hook': 'post_init_hook',
     'uninstall_hook': 'uninstall_hook',
     'license': 'LGPL-3',
