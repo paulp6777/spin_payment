@@ -34,10 +34,7 @@
         'views/res_currency_view.xml',
         'data/crypto_payment_status.xml'
     ],
-    # only loaded in demonstration mode
-    'demo': [
-        'demo/demo.xml',
-    ],
+   'images': ['static/description/img/banner.jpeg'],
     'external_dependencies': {
         'python' : ['xmltodict'],
     },
