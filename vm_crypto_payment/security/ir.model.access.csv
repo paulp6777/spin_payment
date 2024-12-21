@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_vm_crypto_payment_vm_crypto_payment,vm_crypto_payment.vm_crypto_payment,model_vm_crypto_payment_vm_crypto_payment,base.group_user,1,1,1,1

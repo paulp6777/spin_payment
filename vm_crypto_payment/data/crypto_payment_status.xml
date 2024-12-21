@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+   
+
+    <record id="ir_cron_crypto_payment_status" model="ir.cron">
+        <field name="name">Crypto : Payment Status</field>
+        <field name="model_id" ref="model_payment_transaction"/>
+        <field name="state">code</field>
+        <field name="code">model.action_crypto_status()</field>
+        <field name="user_id" ref="base.user_root"/>
+        <field name="interval_number">10</field>
+        <field name="interval_type">minutes</field>
+        <field name="numbercall">-1</field>
+    </record>
+</odoo>

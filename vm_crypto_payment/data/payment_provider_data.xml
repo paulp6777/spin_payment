@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="payment_provider_crypto" model="payment.provider">
+        <field name="name">Cryptp Payment</field>
+        <field name="module_id" ref="base.module_vm_crypto_payment"/>
+        <field name="payment_method_ids"
+               eval="[(6, 0, [
+                   ref('payment.payment_method_card')
+               ])]"/>
+        <field name="code">crypto</field>
+        <field name="redirect_form_view_id" ref="redirect_form"/>
+        <field name="allow_tokenization">True</field>
+        <field name="app_id">1035241010115601</field>
+        <field name="secret_key">04f02cc0cee14679</field>
+        
+    </record>
+    
+     <record id="account_payment_method_crypto_in" model="account.payment.method">
+        <field name="name">Crypto Payment</field>
+        <field name="code">crypto</field>
+        <field name="payment_type">inbound</field>
+
+    </record>
+    
+</odoo>

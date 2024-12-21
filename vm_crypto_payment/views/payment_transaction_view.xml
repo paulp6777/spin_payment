@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<odoo>
+
+    <record id="payment_transaction_form_crypto" model="ir.ui.view">
+        <field name="name">payment.transaction Form</field>
+        <field name="model">payment.transaction</field>
+        <field name="inherit_id" ref="payment.payment_transaction_form"/>
+        <field name="arch" type="xml">
+            <button  name="action_capture" position="after">
+                <button type="object" name="action_crypto_status"  string="Status Transaction" class="oe_highlight"/>
+            </button>
+            <field name="provider_reference" position="after">
+                <field name="hash_code"/>
+
+            </field>
+                  
+        </field>
+    </record>
+
+    
+
+</odoo>
