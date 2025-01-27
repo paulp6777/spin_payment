@@ -2,7 +2,57 @@
 {
     'name': "CryptoProcessor ",
 
-    'summary': "CryptoProcessor.ai Integration with Odoo Website",
+    'summary': """ We are a Cryptocurrency Payment Processor that integrates with Odoo applications. Our Crypto Payment Gateway can do Subscription and recurring billing with Cryptocurrency. We have Bitcoin , Ethereum , Doge , Dash , Litecoin payment gateways and adding coins and tokens.  BTC , ETH , USDT , LTC , DASH , DOGE. Our Crypto checkout for pos integrates seamlessly with Odoo. We are a Digital Currency payment solution, Bitcoin Merchant services provider that has secure crypto transactions so accept crypto payments on your POS now.
+•  How to Accept Bitcoin on Odoo Pos
+•  Best Crypto Payment Gateway for Odoo
+•  Enable Crypto Payments in Odoo pos
+•  Easy Bitcoin Payment Integration for Pos
+•  Manage Invoices with Cryptocurrency in Odoo
+•  Accept Cryptocurrency for Recurring Payments
+•  Affordable Crypto Payment Gateway for pos
+•  Odoo Integration for Blockchain Payments
+•  Best Invoicing Software with Crypto Support
+•  Secure Crypto Payments for Pos Businesses
+* Low-Cost Crypto Payments
+•  Fast Cryptocurrency Transactions
+•  Zero Chargeback Risk Payment System
+•  Global Payments with Crypto
+•  Secure Blockchain Payment Gateway
+•  Multi-Currency Crypto Gateway
+•  Accept Stablecoins in pos
+•  No Middleman Crypto Transactions
+•  User-Friendly Crypto Payment Gateway
+•  Odoo Crypto Payment Gateway
+•  Odoo Cryptocurrency Integration
+•  Odoo Bitcoin Payments
+•  Accept Crypto in Odoo pos
+•  Odoo Blockchain Payment Integration
+•  Odoo Crypto Invoicing Solution
+•  Odoo Bitcoin Invoices
+•  Odoo pos Crypto Payments
+•  Odoo POS Cryptocurrency Payments
+•  Odoo ERP Crypto Payment Gateway
+•  Crypto Payments for Pos Stores
+•  pos Cryptocurrency Integration
+•  Accept Bitcoin for stores
+•  Blockchain Payments for pos
+•  Crypto Checkout Solution
+•  Bitcoin pos Payment Gateway
+•  Crypto Payment Integration for Pos
+•  Secure Digital Payments for pos
+•  Crypto-Friendly pos
+•  Seamless Cryptocurrency Checkout
+•  Crypto Invoicing Software
+•  Cryptocurrency Invoice Payments
+•  Generate Crypto Invoices
+•  Bitcoin Invoice Payment Solution
+•  Invoice Management with Crypto
+•  Accept Ethereum for Invoices
+•  Blockchain Invoicing Software
+•  Crypto-Friendly Invoice System
+•  Recurring Payments with Crypto
+•  Invoice Automation with Bitcoin
+""",
 
     'description': """
                 We are a Cryptocurrency Payment Processor that integrates with Odoo applications. Our Crypto Payment Gateway can do Subscription and recurring billing with Cryptocurrency. We have Bitcoin , Ethereum , Doge , Dash , Litecoin payment gateways and adding coins and tokens.  BTC , ETH , USDT , LTC , DASH , DOGE. Our Crypto checkout for pos integrates seamlessly with Odoo. We are a Digital Currency payment solution, Bitcoin Merchant services provider that has secure crypto transactions so accept crypto payments on your POS now.
