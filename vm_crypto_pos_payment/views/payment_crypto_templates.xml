@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+     <template id="redirect_form">
+        <form t-att-action="api_url" method="post">
+                <input type='hidden' name='APP_ID' t-att-value='APP_ID'/>
+                <input type='hidden' name='ORDER_ID' t-att-value="ORDER_ID"/>
+                <input type='hidden' name='AMOUNT' t-att-value="AMOUNT"/>
+                <input type='hidden' name='TXNTYPE' t-att-value="TXNTYPE"/>
+                <input type='hidden' name='CUST_STATE' t-att-value="CUST_STATE"/>
+                <input type='hidden' name='CUST_CITY' t-att-value="CUST_CITY"/>
+                <input type='hidden' name='CUST_COUNTRY' t-att-value="CUST_COUNTRY"/>
+                <input type='hidden' name='CUST_NAME' t-att-value="CUST_NAME"/>
+                <input type='hidden' name='CUST_STREET_ADDRESS1' t-att-value="CUST_STREET_ADDRESS1"/>
+                <input type='hidden' name='CUST_ZIP' t-att-value="CUST_ZIP"/>
+                <input type='hidden' name='CUST_PHONE' t-att-value="CUST_PHONE"/>
+                <input type='hidden' name='CUST_EMAIL' t-att-value="CUST_EMAIL"/>
+                <input type='hidden' name='PRODUCT_DESC' t-att-value="PRODUCT_DESC"/>
+                <input type='hidden' name='CURRENCY_CODE' t-att-value='CURRENCY_CODE'/>
+                <input type='hidden' name='RETURN_URL' t-att-value="RETURN_URL"/>
+                <input type='hidden' name='HASH' t-att-value='HASH'/>
+          
+        </form>
+    </template>
+
+</odoo>
+
+<!-- APP_ID: 1035241010115601
+MERCHANTNAME: 
+ORDER_ID: 55557
+AMOUNT: 1000
+TXNTYPE: SALE
+CUST_NAME: 
+CUST_STREET_ADDRESS1: Great Wall
+CUST_ZIP: 32546
+CUST_PHONE: 9454243567
+CUST_EMAIL: johnsnow@test.com
+PRODUCT_DESC: testproduct
+CURRENCY_CODE: 103
+RETURN_URL: http://127.0.0.27:9027/shop/confirmation
+HASH: E34FE519D1 -->
